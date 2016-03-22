@@ -4,7 +4,7 @@ class Library {
 
 String location
 
-int openingHours
+String openingHours
 
 String book
 
@@ -19,5 +19,16 @@ String toString() {
 }
 
     static constraints = {
+
+location()
+
+openingHours()
+
+book()
+
+student()
+
+librarian()
+
     }
 }
