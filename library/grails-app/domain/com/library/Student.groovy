@@ -17,5 +17,13 @@ String toString(){
 }
 
     static constraints = {
+
+studentid()
+
+name()
+
+email()
+
+course()
     }
 }
