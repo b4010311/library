@@ -6,7 +6,7 @@ String title
 
 String author
 
-int isbn
+String isbn
 
 String dateBorrowed
 
@@ -21,5 +21,19 @@ String toString(){
 }
 
     static constraints = {
+
+title()
+
+author()
+
+isbn()
+
+dateBorrowed()
+
+returnDate()
+
+student()
+
+
     }
 }
