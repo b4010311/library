@@ -6,7 +6,7 @@ String title
 
 String author
 
-Int isbn
+int isbn
 
 String dateBorrowed
 

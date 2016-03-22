@@ -2,9 +2,9 @@ package com.library
 
 class Library {
 
-Sting location
+String location
 
-Int openingHours
+int openingHours
 
 String book
 
