@@ -14,10 +14,21 @@ String telephone
 
 String toString() {
 
-"$name, $email"
+"$name, $email, $telephone"
 
 }
 
     static constraints = {
+
+userName()
+
+password()
+
+name()
+
+email() 
+
+telephone()
+
     }
 }
