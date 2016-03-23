@@ -99,6 +99,24 @@ def book3 = new Book(title: 'Horrid Henry',
 
 
 
+def library1 = new Library(location: 'Sheffield, Addsetts-City',
+		openingHours: '24/7',
+		book: 'Mice and Men',
+		student: 'Shabaz Khalid',
+		librarian: 'Timothy Street').save()
+
+def library2 = new Library(location: 'Sheffield, Addsetts-City',
+		openingHours: '24/7',
+		book: 'Winnie the Pooh',
+		student: 'Frank Sekyere',
+		librarian: 'Dave Smith').save()
+
+def library3 = new Library(location: 'Sheffield, Addsetts-City',
+		openingHours: '24/7',
+		book: 'Horrid Henry',
+		student: 'Shabaz Khalid',
+		librarian: 'Sophie Lance').save()
+
 
     }
 
