@@ -8,11 +8,11 @@ String email
 
 String studentid
 
-String course
+Course course
 
 String toString(){
 
-"$name, $studentid, $email"
+"$name, $studentid"
 
 }
 

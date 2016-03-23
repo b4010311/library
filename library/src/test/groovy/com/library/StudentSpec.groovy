@@ -17,17 +17,15 @@ class StudentSpec extends Specification {
 
        void toString() {
 
-when: "A Student has name, studentid and email"
+when: "A Student has name and studentid"
 
 def student = new Student(name:'Frank Sekyere',
 
-                 studentid:'B4019796',
-
-                 email:'Franksekyere@shu.ac.uk')
+                 studentid:'B4019796')
 
 then: "the to String method will merge them."
 
-student.toString() == 'Frank Sekyere, B4019796, Franksekyere@shu.ac.uk'
+student.toString() == 'Frank Sekyere, B4019796'
         
     }
 }
