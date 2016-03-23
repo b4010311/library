@@ -31,6 +31,9 @@ def course3 = new Course(title: 'Database Systems',
 		department: 'Computing').save()
 
 
+
+
+
 def student1 = new Student(studentid: 'B4010311',
 		name: 'Shabaz Khalid',
 		email: 'ShabazKhalid@student.shu.ac.uk',
@@ -45,6 +48,9 @@ def student3 = new Student(studentid: 'B4010456',
 		name: 'Will Smith',
 		email: 'WillSmith@student.shu.ac.uk',
 		course: 'Computing').save()
+
+
+
 
 
 def librarian1 = new Librarian(userName: 'Timmy',
@@ -66,6 +72,29 @@ def librarian3 = new Librarian(userName: 'Dave',
 		telephone: '01725674298').save() 
 
 
+
+
+
+def book1 = new Book(title: 'Mice and Men',
+		author: 'John Steinback',
+		isbn: '9783423620727',
+		dateBorrowed: new Date('23/03/2015'),
+		returnDate: new Date('23/05/2016'),
+		student: 'Shabaz Khalid').save()
+
+def book2 = new Book(title: 'Winnie the Pooh',
+		author: 'A.A Milne',
+		isbn: '9788700235687',
+		dateBorrowed: new Date('23/03/2015'),
+		returnDate: new Date('23/05/2016'),
+		student: 'Frank Sekyere').save() 
+ 
+def book3 = new Book(title: 'Horrid Henry',
+		author: 'Francessca Simon',
+		isbn: '9781599611853',
+		dateBorrowed: new Date('23/03/2015'),
+		returnDate: new Date('23/05/2016'),
+		student: 'Shabaz Khalid').save() 
 
 
 
