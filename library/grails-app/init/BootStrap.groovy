@@ -47,6 +47,25 @@ def student3 = new Student(studentid: 'B4010456',
 		course: 'Computing').save()
 
 
+def librarian1 = new Librarian(userName: 'Timmy',
+		password: 'password',
+		name: 'Timothy Street',
+		email: 'TimothyStreet@librarian.shu.ac.uk',
+		telephone: '01725856023').save() 
+
+def librarian2 = new Librarian(userName: 'Sophie',
+		password: 'password',
+		name: 'Sophie Lance',
+		email: 'SophieLance@librarian.shu.ac.uk',
+		telephone: '01725669512').save() 
+
+def librarian3 = new Librarian(userName: 'Dave',
+		password: 'password',
+		name: 'Dave Smith',
+		email: 'DaveSmith@librarian.shu.ac.uk',
+		telephone: '01725674298').save() 
+
+
 
 
 
