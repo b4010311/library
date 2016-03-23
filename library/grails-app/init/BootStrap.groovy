@@ -28,7 +28,23 @@ def course3 = new Course(title: 'Database Systems',
 		description: '''This module aims to consolidate and extend its' students skills in using data-centred system 
 		development techniques and tools, which will enable them to successfully contribute to database development, 
 		implementation and management.''',
-		department: 'Computing').save() 
+		department: 'Computing').save()
+
+
+def student1 = new Student(studentid: 'B4010311',
+		name: 'Shabaz Khalid',
+		email: 'ShabazKhalid@student.shu.ac.uk',
+		course: 'Computing').save()  
+
+def student2 = new Student(studentid: 'B4019796',
+		name: 'Frank Sekyere',
+		email: 'FrankSekyere@student.shu.ac.uk',
+		course: 'Computing').save()
+
+def student3 = new Student(studentid: 'B4010456',
+		name: 'Will Smith',
+		email: 'WillSmith@student.shu.ac.uk',
+		course: 'Computing').save()
 
 
 
