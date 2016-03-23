@@ -10,7 +10,7 @@ String book
 
 String student
 
-String librarian 
+Librarian librarian 
 
 String toString() {
 

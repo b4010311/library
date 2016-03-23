@@ -101,23 +101,24 @@ def library1 = new Library(location: 'Sheffield, Addsetts-City',
 		openingHours: '24/7',
 		book: 'Mice and Men',
 		student: 'Shabaz Khalid',
-		librarian: 'Timothy Street').save()
+		librarian:librarian1).save()
 
 def library2 = new Library(location: 'Sheffield, Addsetts-City',
 		openingHours: '24/7',
 		book: 'Winnie the Pooh',
 		student: 'Frank Sekyere',
-		librarian: 'Dave Smith').save()
+		librarian:librarian2).save()
 
 def library3 = new Library(location: 'Sheffield, Addsetts-City',
 		openingHours: '24/7',
 		book: 'Horrid Henry',
 		student: 'Shabaz Khalid',
-		librarian: 'Sophie Lance').save()
+		librarian:librarian3).save()
 
 course1.addToStudents(student1)
 course1.addToStudents(student2)
 course2.addToStudents(student3)
+
 
     }
 
