@@ -10,6 +10,8 @@ String studentid
 
 Course course
 
+static hasMany=[books:Book]
+
 String toString(){
 
 "$name, $studentid"

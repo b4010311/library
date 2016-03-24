@@ -16,7 +16,7 @@ static hasMany=[students:Student]
 
 String toString(){
 
-"$title, $code, $department"
+"$title, $code"
 
 }
 

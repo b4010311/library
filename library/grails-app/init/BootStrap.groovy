@@ -78,21 +78,21 @@ def book1 = new Book(title: 'Mice and Men',
 		isbn: '9783423620727',
 		dateBorrowed: '23/03/2016',
 		returnDate: '23/05/2016',
-		student: 'Shabaz Khalid').save()
+		student:student1).save()
 
 def book2 = new Book(title: 'Winnie the Pooh',
 		author: 'A.A Milne',
 		isbn: '9788700235687',
 		dateBorrowed: '23/03/2016',
 		returnDate: '23/05/2016',
-		student: 'Frank Sekyere').save() 
+		student:student2).save() 
  
 def book3 = new Book(title: 'Horrid Henry',
 		author: 'Francessca Simon',
 		isbn: '9781599611853',
 		dateBorrowed: '23/03/2016',
 		returnDate: '23/05/2016',
-		student: 'Shabaz Khalid').save() 
+		student:student1).save() 
 
 
 
@@ -118,6 +118,10 @@ def library3 = new Library(location: 'Sheffield, Addsetts-City',
 course1.addToStudents(student1)
 course1.addToStudents(student2)
 course2.addToStudents(student3)
+
+student1.addToBooks(book1)
+student1.addToBooks(book3)
+student2.addToBooks(book2)
 
 
     }

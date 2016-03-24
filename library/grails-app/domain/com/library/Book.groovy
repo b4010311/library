@@ -12,7 +12,7 @@ String dateBorrowed
 
 String returnDate
 
-String student
+Student student
 
 String toString(){
 
