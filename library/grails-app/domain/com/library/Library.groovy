@@ -8,9 +8,11 @@ String openingHours
 
 String book
 
-String student
+Student student
 
 Librarian librarian 
+
+static hasMany=[students:Student]
 
 String toString() {
 
