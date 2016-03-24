@@ -12,6 +12,8 @@ String password
 
 String telephone
 
+static belongsTo=Library
+
 String toString() {
 
 "$name, $email, $telephone"

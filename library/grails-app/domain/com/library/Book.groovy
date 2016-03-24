@@ -14,6 +14,8 @@ String returnDate
 
 Student student
 
+static belongsTo=Library
+
 String toString(){
 
 "$title, $author"
