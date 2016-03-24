@@ -99,19 +99,19 @@ def book3 = new Book(title: 'Horrid Henry',
 
 def library1 = new Library(location: 'Sheffield, Addsetts-City',
 		openingHours: '24/7',
-		book: 'Mice and Men',
+		book:book1,
 		student:student1,
 		librarian:librarian1).save()
 
 def library2 = new Library(location: 'Sheffield, Addsetts-City',
 		openingHours: '24/7',
-		book: 'Winnie the Pooh',
+		book:book2,
 		student:student2,
 		librarian:librarian2).save()
 
 def library3 = new Library(location: 'Sheffield, Addsetts-City',
 		openingHours: '24/7',
-		book: 'Horrid Henry',
+		book:book3,
 		student:student1,
 		librarian:librarian3).save()
 
@@ -123,12 +123,7 @@ student1.addToBooks(book1)
 student1.addToBooks(book3)
 student2.addToBooks(book2)
 
-library1.addToStudents(student1)
-library1.addToStudents(student2)
-library2.addToStudents(student2)
-library2.addToStudents(student3)
-library3.addToStudents(student1)
-library3.addToStudents(student2)
+
 
 
     }
