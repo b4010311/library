@@ -2,122 +2,73 @@
 <html>
     <head>
         <meta name="layout" content="main"/>
-        <title>Welcome to Grails</title>
-        <style type="text/css" media="screen">
-            #status {
-                background-color: #eee;
-                border: .2em solid #fff;
-                margin: 2em 2em 1em;
-                padding: 1em;
-                width: 12em;
-                float: left;
-                -moz-box-shadow: 0px 0px 1.25em #ccc;
-                -webkit-box-shadow: 0px 0px 1.25em #ccc;
-                box-shadow: 0px 0px 1.25em #ccc;
-                -moz-border-radius: 0.6em;
-                -webkit-border-radius: 0.6em;
-                border-radius: 0.6em;
-            }
+        <title>The University Enrolement System</title>
+</head>
 
-            #status ul {
-                font-size: 0.9em;
-                list-style-type: none;
-                margin-bottom: 0.6em;
-                padding: 0;
-            }
+<body>
 
-            #status li {
-                line-height: 1.3;
-            }
+<div id="Welcome">
+<br>
+<h3>Welcome to The University Enrolement and Library System</h3>
+<p>Welcome to the University Enrolement and Library Booking System, from this you will be able to add courses and students and enroll them onto a course. You will also be able to add any new Libraries and librarians and books that are associated with that library. You can also give out a book to a student and record the details of when it was borrowed and when it is to be returned. </p>
+</div>
+<br/>
 
-            #status h1 {
-                text-transform: uppercase;
-                font-size: 1.1em;
-                margin: 0 0 0.3em;
-            }
 
-            #page-body {
-                margin: 2em 1em 1.25em 18em;
-            }
+<div class="homeCell">
+<h3>Course</h3>
+<p>Here you can add or view Courses</P>
+<span class="buttons">
+<g:link controller="course" action="create">Add Course</g:link> 
+<g:link controller="course" action="index">View Courses</g:link>
+</span>
+</div>
+<br/>
 
-            h2 {
-                margin-top: 1em;
-                margin-bottom: 0.3em;
-                font-size: 1em;
-            }
 
-            p {
-                line-height: 1.5;
-                margin: 0.25em 0;
-            }
+<div class="homeCell">
+<h3>Student</h3>
+<p>Here you can add or view Students</P>
+<span class="buttons">
+<g:link controller="student" action="create">Add Student</g:link>
+<g:link controller="student" action="index">View Students</g:link>
+</span>
+</div>
+<br/>
 
-            #controller-list ul {
-                list-style-position: inside;
-            }
 
-            #controller-list li {
-                line-height: 1.3;
-                list-style-position: inside;
-                margin: 0.25em 0;
-            }
+<div class="homeCell">
+<h3>Book</h3>
+<p>Here you can add or view Books</P>
+<span class="buttons">
+<g:link controller="book" action="create">Add Book</g:link>
+<g:link controller="book" action="index">View Books</g:link>
+</span>
+</div>
+<br/>
 
-            @media screen and (max-width: 480px) {
-                #status {
-                    display: none;
-                }
 
-                #page-body {
-                    margin: 0 1em 1em;
-                }
+<div class="homeCell">
+<h3>Librarian</h3>
+<p>Here you can add or view Librarians</P>
+<span class="buttons">
+<g:link controller="librarian" action="create">Add Librarian</g:link>
+<g:link controller="librarian" action="index">View Librarians</g:link>
+</span>
+</div>
+<br/>
 
-                #page-body h1 {
-                    margin-top: 0;
-                }
-            }
-        </style>
-    </head>
-    <body>
-        <a href="#page-body" class="skip"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
-        <div id="status" role="complementary">
-            <h1>Application Status</h1>
-            <ul>
-                <li>Environment: ${grails.util.Environment.current.name}</li>
-                <li>App profile: ${grailsApplication.config.grails?.profile}</li>
-                <li>App version: <g:meta name="info.app.version"/></li>
-                <li>Grails version: <g:meta name="info.app.grailsVersion"/></li>
-                <li>Groovy version: ${GroovySystem.getVersion()}</li>
-                <li>JVM version: ${System.getProperty('java.version')}</li>
-                <li>Reloading active: ${grails.util.Environment.reloadingAgentEnabled}</li>
-            </ul>
-            <h1>Artefacts</h1>
-            <ul>
-                <li>Controllers: ${grailsApplication.controllerClasses.size()}</li>
-                <li>Domains: ${grailsApplication.domainClasses.size()}</li>
-                <li>Services: ${grailsApplication.serviceClasses.size()}</li>
-                <li>Tag Libraries: ${grailsApplication.tagLibClasses.size()}</li>
-            </ul>
-            <h1>Installed Plugins</h1>
-            <ul>
-                <g:each var="plugin" in="${applicationContext.getBean('pluginManager').allPlugins}">
-                    <li>${plugin.name} - ${plugin.version}</li>
-                </g:each>
-            </ul>
-        </div>
-        <div id="page-body" role="main">
-            <h1>Welcome to Grails</h1>
-            <p>Congratulations, you have successfully started your first Grails application! At the moment
-               this is the default page, feel free to modify it to either redirect to a controller or display whatever
-               content you may choose. Below is a list of controllers that are currently deployed in this application,
-               click on each to execute its default action:</p>
 
-            <div id="controller-list" role="navigation">
-                <h2>Available Controllers:</h2>
-                <ul>
-                    <g:each var="c" in="${grailsApplication.controllerClasses.sort { it.fullName } }">
-                        <li class="controller"><g:link controller="${c.logicalPropertyName}">${c.fullName}</g:link></li>
-                    </g:each>
-                </ul>
-            </div>
-        </div>
-    </body>
+<div class="homeCell">
+<h3>Library</h3>
+<p>Here you can add or view Libraries</P>
+<span class="buttons">
+<g:link controller="library" action="create">Add Library</g:link>
+<g:link controller="library" action="index">View Libraries</g:link>
+</span>
+</div>
+<br/>
+
+
+</body>
 </html>

@@ -109,8 +109,8 @@ def library2 = new Library(location: 'Sheffield, Addsetts-City',
 		student:student2,
 		librarian:librarian2).save()
 
-def library3 = new Library(location: 'Sheffield, Addsetts-City',
-		openingHours: '24/7',
+def library3 = new Library(location: 'Sheffield, Colliegate Campus',
+		openingHours: '9am - 6pm',
 		book:book3,
 		student:student1,
 		librarian:librarian3).save()
