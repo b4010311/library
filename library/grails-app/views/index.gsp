@@ -15,9 +15,14 @@
 </div>
 <br/>
 
-
-
-
+<div class="homeCell">
+<h3>Student Details</h3>
+<p>Here you can choose whether to view Student Details in XML or JSON format</p>
+<span class="buttons">
+<a href="http://localhost:8080/student/liststudentxml">XML</g>
+<a href="http://localhost:8080/student/liststudentjson">JSON</g>
+</span>
+</div>
 
 </body>
 </html>

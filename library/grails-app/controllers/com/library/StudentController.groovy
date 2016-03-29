@@ -2,6 +2,7 @@ package com.library
 
 import static org.springframework.http.HttpStatus.*
 import grails.transaction.Transactional
+import grails.converters.*
 
 @Transactional(readOnly = true)
 class StudentController {
@@ -15,6 +16,28 @@ class StudentController {
 
     def show(Student student) {
         respond student
+    }
+
+    def liststudentxml(Student student){
+
+    if(params.id && Student.exists(params.id)){
+       render Student.findById(params.id) as XML
+
+    }else{
+
+    render Student.list() as XML
+    }
+    }
+
+    def liststudentjson(Student student){
+
+    if(params.id && Student.exists(params.id)){
+       render Student.findById(params.id) as JSON
+
+    }else{
+
+    render Student.list() as JSON
+    }
     }
 
     def create() {
