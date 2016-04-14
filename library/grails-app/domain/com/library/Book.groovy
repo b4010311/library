@@ -24,6 +24,7 @@ String toString(){
 
     static constraints = {
 
+
 title()
 
 author()

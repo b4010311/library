@@ -2,6 +2,7 @@ package com.library
 
 import static org.springframework.http.HttpStatus.*
 import grails.transaction.Transactional
+import grails.converters.*
 
 @Transactional(readOnly = true)
 class LibraryController {
@@ -15,6 +16,14 @@ class LibraryController {
 
     def show(Library library) {
         respond library
+    }
+
+    def listBooks(Library library){
+    if (params.id && Library.exists(params.id)){
+    render Library.findById(params.id) as XML
+    }else{
+    render Library.list() as XML
+    }
     }
 
     def create() {
